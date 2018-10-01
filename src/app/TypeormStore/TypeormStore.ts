@@ -209,6 +209,6 @@ export class TypeormStore extends Store {
 
   private handleError(er: Error) {
     this.debug("Typeorm returned err", er);
-    this.emit("disconnect", er);
+    //this.emit("disconnect", er);
   }
 }
