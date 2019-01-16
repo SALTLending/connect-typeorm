@@ -75,7 +75,7 @@ export class TypeormStore extends Store {
     let json: string;
 
     try {
-      json = JSON.stringify(sess);
+      json = sess;
     } catch (er) {
       return fn ? fn(er) : undefined;
     }
